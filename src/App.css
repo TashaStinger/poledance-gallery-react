@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(74, 74, 74);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.App-header {
+  margin-top: 50px;
+}
