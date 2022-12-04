@@ -26,6 +26,25 @@ export default function Gallery() {
     if (loaded){
         return(
             <div className="Gallery">
+                {/* <p>
+                <button class="btn btn-light m-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    База
+                </button>
+                <button class="btn btn-light m-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                    Колінний зачіп
+                </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <Elements filter="type" filterValue="base"/>
+                </div>
+                </div>
+                <div class="collapse" id="collapseExample1">
+                <div class="card card-body">
+                    <Elements filter="type" filterValue="knee"/>
+                </div>
+                </div> */}
+
                 <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
