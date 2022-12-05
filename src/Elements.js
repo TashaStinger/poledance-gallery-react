@@ -1,5 +1,12 @@
 import React from "react";
 import Element from "./Element";
+import img001 from "./images/001.jpeg";
+import img002 from "./images/002.jpeg";
+import img003 from "./images/003.jpeg";
+import img004 from "./images/004.jpeg";
+import img005 from "./images/005.jpeg";
+import img006 from "./images/006.jpeg";
+import img007 from "./images/007.jpg";
 
 export default function Elements(props) {
 
@@ -10,8 +17,8 @@ export default function Elements(props) {
             type: "knee",
             base: 1,
             hardness: 0,
-            img: "images/005.jpeg",
-            url: "https://www.youtube.com/embed/YYXpu4vTCXk"
+            url: "https://www.youtube.com/embed/YYXpu4vTCXk",
+            img: img001
         },
         {
             name: "Мартіні",
@@ -19,7 +26,8 @@ export default function Elements(props) {
             type: "knee",
             base: 1,
             hardness: 0,
-            url: "https://www.youtube.com/embed/BQ8oAoejdgU"
+            url: "https://www.youtube.com/embed/BQ8oAoejdgU",
+            img: img002
         },
         {
             name: "Четвірка",
@@ -27,7 +35,8 @@ export default function Elements(props) {
             type: "hips",
             base: 1,
             hardness: 0,
-            url: "https://youtube.com/embed/5TBCfSgQ6N0"
+            url: "https://youtube.com/embed/5TBCfSgQ6N0",
+            img: img003
         },
         {
             name: "Пташка",
@@ -35,7 +44,8 @@ export default function Elements(props) {
             type: "hips",
             base: 1,
             hardness: 0,
-            url: "https://youtube.com/embed/6p2C9z-F70M"
+            url: "https://youtube.com/embed/6p2C9z-F70M",
+            img: img004
         },
         {
             name: "Рогатка",
@@ -43,7 +53,8 @@ export default function Elements(props) {
             type: "base",
             base: 1,
             hardness: 3,
-            url: "https://youtube.com/embed/-O6ZOAd4Fv4"
+            url: "https://youtube.com/embed/-O6ZOAd4Fv4",
+            img: img005
         },
         {
             name: "Хват на розпір",
@@ -51,7 +62,8 @@ export default function Elements(props) {
             type: "base",
             base: 1,
             hardness: 0,
-            url: "https://youtube.com/embed/LIO_1de8uzY"
+            url: "https://youtube.com/embed/LIO_1de8uzY",
+            img: img006
         },
         {
             name: "Підлаз",
@@ -59,7 +71,8 @@ export default function Elements(props) {
             type: "base",
             base: 1,
             hardness: 0,
-            url: "https://youtube.com/embed/9hzVEuvSoAc"
+            url: "https://youtube.com/embed/9hzVEuvSoAc",
+            img: img007
         }
     ]
 
