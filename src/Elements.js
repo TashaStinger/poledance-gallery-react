@@ -12,6 +12,7 @@ export default function Elements(props) {
 
       let elements = [
         {
+            id: "element0001",
             name: "Падаюча зірка",
             level: 0,
             type: "knee",
@@ -21,6 +22,7 @@ export default function Elements(props) {
             img: img001
         },
         {
+            id: "element0002",
             name: "Мартіні",
             level: 0,
             type: "knee",
@@ -30,6 +32,7 @@ export default function Elements(props) {
             img: img002
         },
         {
+            id: "element0003",
             name: "Четвірка",
             level: 0,
             type: "hips",
@@ -39,6 +42,7 @@ export default function Elements(props) {
             img: img003
         },
         {
+            id: "element0004",
             name: "Пташка",
             level: 0,
             type: "hips",
@@ -48,6 +52,7 @@ export default function Elements(props) {
             img: img004
         },
         {
+            id: "element0005",
             name: "Рогатка",
             level: 1,
             type: "base",
@@ -57,6 +62,7 @@ export default function Elements(props) {
             img: img005
         },
         {
+            id: "element0006",
             name: "Хват на розпір",
             level: 0,
             type: "base",
@@ -66,6 +72,7 @@ export default function Elements(props) {
             img: img006
         },
         {
+            id: "element0007",
             name: "Підлаз",
             level: 0,
             type: "base",
@@ -76,7 +83,6 @@ export default function Elements(props) {
         }
     ]
 
-    console.log(props);
     if (elements) {
         return(
             <div className="Elements">
