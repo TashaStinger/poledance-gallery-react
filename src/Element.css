@@ -1,0 +1,13 @@
+.Elements img {
+    display: block;
+    margin: auto;
+}
+
+.Element .btn-link {
+    color: black; 
+    text-decoration: none;
+}
+
+.Element .btn-link:hover {
+    text-decoration: underline;
+}
