@@ -89,13 +89,13 @@ export default function Elements(props) {
         return(
             <div className="Elements">
                 <section>
-                    <div className="row">
+                    <div className="row row-cols-3">
                     
                     {elements.map (function (element,index) {
                         if (element.level === props.level || props.level === "level-all") {
                             if (element[props.filter] === props.filterValue) {
                                 return (
-                                    <div className="col-4" key={index}>
+                                    <div className="col" key={index}>
                                         <Element element={element}/>
                                     </div>
                                 )
