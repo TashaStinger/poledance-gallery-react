@@ -14,7 +14,7 @@ export default function Elements(props) {
         {
             id: "element0001",
             name: "Падаюча зірка",
-            level: 0,
+            level: "level-intro",
             type: "knee",
             base: 1,
             hardness: 0,
@@ -24,7 +24,7 @@ export default function Elements(props) {
         {
             id: "element0002",
             name: "Мартіні",
-            level: 0,
+            level: "level-intro",
             type: "knee",
             base: 1,
             hardness: 0,
@@ -34,7 +34,7 @@ export default function Elements(props) {
         {
             id: "element0003",
             name: "Четвірка",
-            level: 0,
+            level: "level-intro",
             type: "hips",
             base: 1,
             hardness: 0,
@@ -44,7 +44,7 @@ export default function Elements(props) {
         {
             id: "element0004",
             name: "Пташка",
-            level: 0,
+            level: "level-intro",
             type: "hips",
             base: 1,
             hardness: 0,
@@ -54,7 +54,7 @@ export default function Elements(props) {
         {
             id: "element0005",
             name: "Рогатка",
-            level: 1,
+            level: "level-1",
             type: "base",
             base: 1,
             hardness: 3,
@@ -64,7 +64,7 @@ export default function Elements(props) {
         {
             id: "element0006",
             name: "Хват на розпір",
-            level: 0,
+            level: "level-0",
             type: "base",
             base: 1,
             hardness: 0,
@@ -74,7 +74,7 @@ export default function Elements(props) {
         {
             id: "element0007",
             name: "Підлаз",
-            level: 0,
+            level: "level-intro",
             type: "base",
             base: 1,
             hardness: 0,
@@ -84,18 +84,23 @@ export default function Elements(props) {
     ]
 
     if (elements) {
+        console.log(props.level);
         return(
             <div className="Elements">
                 <section>
                     <div className="row">
                     
                     {elements.map (function (element,index) {
-                        if (element[props.filter] === props.filterValue) {
-                            return (
-                                <div className="col m-3" key={index}>
-                                    <Element element={element}/>
-                                </div>
-                            )
+                        if (element.level === props.level || props.level === "level-all") {
+                            if (element[props.filter] === props.filterValue) {
+                                return (
+                                    <div className="col m-3" key={index}>
+                                        <Element element={element}/>
+                                    </div>
+                                )
+                            } else {
+                                return null;
+                            }
                         } else {
                             return null;
                         }

@@ -19,3 +19,14 @@
 .accordion-button:not(.collapsed)::after {
     background-image: var(--bs-accordion-btn-icon);
 }
+
+.form-check-input:checked {
+    background-color: #ff8c01;
+    border-color: #9b6100;
+}
+
+.form-check-input:focus {
+    border-color: #737373;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(253 113 13 / 25%);
+}
