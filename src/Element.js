@@ -9,9 +9,11 @@ export default function Element(props) {
                     <img src={props.element.img} width={100} alt={props.element.name} />
                 </a> */}
                 {/* <!-- Button trigger modal --> */}
-                <button type="button" className="btn btn-link" data-bs-toggle="modal" data-bs-target={"#"+props.element.id}>
+                <button type="button" className="btn btn-link element-button" data-bs-toggle="modal" data-bs-target={"#"+props.element.id}>
                     <img className="element-icon img-fluid" src={props.element.img} alt={props.element.name} />
-                    {props.element.name}
+                    <div className="element-name">
+                        {props.element.name}
+                    </div>
                 </button>
 
                 {/* <!-- Modal --> */}

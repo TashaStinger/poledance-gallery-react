@@ -95,7 +95,7 @@ export default function Elements(props) {
                         if (element.level === props.level || props.level === "level-all") {
                             if (element[props.filter] === props.filterValue) {
                                 return (
-                                    <div className="col" key={index}>
+                                    <div className="col element-col" key={index}>
                                         <Element element={element}/>
                                     </div>
                                 )

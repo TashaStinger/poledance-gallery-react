@@ -1,3 +1,8 @@
+.Element .element-button {
+    padding: 0;
+    margin: auto;
+}
+
 .Element .btn-link {
     color: black; 
     text-decoration: none;
@@ -12,4 +17,14 @@
     display: block;
     margin: auto;
     border-radius: 8px;
+}
+
+.Element .element-name {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .Element .element-name {
+        margin-top: 8px;
+    }
 }

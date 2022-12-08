@@ -1,0 +1,27 @@
+.Elements {
+    padding: 0 0px;
+}
+
+.Elements .element-col {
+    padding: 0 8px;
+}
+
+@media (min-width: 500px) {
+    .Elements {
+        padding: 0 8px;
+    }
+
+    .Elements .element-col {
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Elements {
+        padding: 0 24px;
+    }
+    .Elements .element-col {
+        padding: 4px 32px;
+    }
+}
+
