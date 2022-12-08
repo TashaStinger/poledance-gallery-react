@@ -9,10 +9,9 @@ export default function Element(props) {
                     <img src={props.element.img} width={100} alt={props.element.name} />
                 </a> */}
                 {/* <!-- Button trigger modal --> */}
-                <br />
                 <button type="button" className="btn btn-link" data-bs-toggle="modal" data-bs-target={"#"+props.element.id}>
-                <img src={props.element.img} width={100} alt={props.element.name} />
-                {props.element.name}
+                    <img className="element-icon img-fluid" src={props.element.img} alt={props.element.name} />
+                    {props.element.name}
                 </button>
 
                 {/* <!-- Modal --> */}

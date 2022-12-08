@@ -1,8 +1,3 @@
-.Elements img {
-    display: block;
-    margin: auto;
-}
-
 .Element .btn-link {
     color: black; 
     text-decoration: none;
@@ -10,4 +5,11 @@
 
 .Element .btn-link:hover {
     text-decoration: underline;
+}
+
+.Element .element-icon {
+    /* max-width: 200px; */
+    display: block;
+    margin: auto;
+    border-radius: 8px;
 }

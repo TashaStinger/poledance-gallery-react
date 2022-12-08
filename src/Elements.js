@@ -1,5 +1,6 @@
 import React from "react";
 import Element from "./Element";
+import "./Elements.css";
 import img001 from "./images/001.jpeg";
 import img002 from "./images/002.jpeg";
 import img003 from "./images/003.jpeg";
@@ -94,7 +95,7 @@ export default function Elements(props) {
                         if (element.level === props.level || props.level === "level-all") {
                             if (element[props.filter] === props.filterValue) {
                                 return (
-                                    <div className="col m-3" key={index}>
+                                    <div className="col-4" key={index}>
                                         <Element element={element}/>
                                     </div>
                                 )
