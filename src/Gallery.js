@@ -93,6 +93,54 @@ export default function Gallery() {
                     </div>
                     </div>
                 </div>
+                {/* <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingFour">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Стійки
+                    </button>
+                    </h2>
+                    <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                        <Elements filter="type" filterValue="handstand" level={level} />
+                    </div>
+                    </div>
+                </div> */}
+                <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingFive">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Крутки
+                    </button>
+                    </h2>
+                    <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                        <Elements filter="type" filterValue="spin" level={level} />
+                    </div>
+                    </div>
+                </div>
+                {/* <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingSix">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Інше
+                    </button>
+                    </h2>
+                    <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                        <Elements filter="type" filterValue="other" level={level} />
+                    </div>
+                    </div>
+                </div> */}
+                {/* <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingSeven">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Комбінації
+                    </button>
+                    </h2>
+                    <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                        <Elements filter="type" filterValue="combo" level={level} />
+                    </div>
+                    </div>
+                </div> */}
                 </div>
 
                 {/* <Elements/> */}

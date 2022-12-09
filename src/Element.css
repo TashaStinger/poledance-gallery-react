@@ -21,6 +21,12 @@
 
 .Element .element-name {
     margin-top: 0;
+    font-weight: 500;
+}
+
+.Element .element-level {
+    font-size: small;
+    color: darkgray;
 }
 
 @media (min-width: 768px) {

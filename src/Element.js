@@ -15,6 +15,9 @@ export default function Element(props) {
                         {props.element.name}
                     </div>
                 </button>
+                <div className="element-level">
+                        {props.element.level}
+                </div>
 
                 {/* <!-- Modal --> */}
                 <div className="modal fade" id={props.element.id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -25,7 +28,7 @@ export default function Element(props) {
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div className="modal-body">
-                        <iframe height="500" src={props.element.url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe height="400" src={props.element.url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
