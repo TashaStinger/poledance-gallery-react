@@ -20,7 +20,7 @@
 }
 
 .Element .element-name {
-    margin-top: 4px;
+    margin-top: 7px;
     font-weight: 400;
     font-size: 0.9em;
     line-height: 1em;
@@ -28,7 +28,7 @@
 
 .Element .element-level {
     font-size: 0.7em;
-    line-height: 2em;
+    line-height: 1.7em;
     color: darkgray;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
