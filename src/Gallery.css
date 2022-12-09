@@ -9,7 +9,11 @@
 
 .accordion-button:not(.collapsed) {
     color: #000000;
+    font-weight: 700;
+    /* font-size: large; */
     background-color: rgb(255 255 255 / 30%);
+    transition: all 200ms ease-in-out;
+    /* text-decoration: underline; */
 }
 
 .accordion-button:focus {

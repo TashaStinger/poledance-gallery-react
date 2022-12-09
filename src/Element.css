@@ -22,11 +22,12 @@
 .Element .element-name {
     margin-top: 4px;
     font-weight: 400;
+    font-size: 0.9em;
     line-height: 1em;
 }
 
 .Element .element-level {
-    font-size: 0.6em;
+    font-size: 0.7em;
     line-height: 2em;
     color: darkgray;
     font-family:Verdana, Geneva, Tahoma, sans-serif
