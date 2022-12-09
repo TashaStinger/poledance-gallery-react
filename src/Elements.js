@@ -46,7 +46,7 @@ export default function Elements(props) {
             level: "level-0",
             type: "base",
             base: 1,
-            hardness: 5,
+            hardness: 9,
             url: "https://youtube.com/embed/-O6ZOAd4Fv4",
             img: img_111_99
         },
