@@ -11,8 +11,12 @@ import img_021_02 from "./images/2_knee/img_021_02.jpeg"; //Мартіні
 // ----- Зачіп стегнами -----
 import img_031_01 from "./images/3_hips/img_031_01.jpeg"; //Четвірка
 import img_031_02 from "./images/3_hips/img_031_02.jpeg"; //Пташка
+// ----- Стійки -------------
+import img_141_05 from "./images/4_handstand/img_141_05.jpg"; //Стійка напівпрапор
 // ----- Крутки -------------
 import img_051_01 from "./images/5_spin/img_051_01.jpg"; //Русалка
+import img_051_02 from "./images/5_spin/img_051_02.jpg"; //Стілець
+import img_051_03 from "./images/5_spin/img_051_03.jpg"; //Жабка
 import img_051_04 from "./images/5_spin/img_051_04.jpeg"; //Циркуль
 import img_151_01 from "./images/5_spin/img_151_01.jpeg"; //Цвіркун
 
@@ -93,6 +97,16 @@ export default function Elements(props) {
             img: img_031_02
         },
         // ----- Стійки -----
+        {
+            id: "hips-141-05",
+            name: "Стійка Напівпрапор",
+            level: "level-intro",
+            type: "handstand",
+            base: 1,
+            hardness: 5,
+            url: "https://youtube.com/embed/zYiWIDM2cSs",
+            img: img_141_05
+        },
         // ----- Крутки -----
         {
             id: "spin-051-01",
@@ -103,6 +117,26 @@ export default function Elements(props) {
             hardness: 0,
             url: "https://youtube.com/embed/pOh4PR5hX6k",
             img: img_051_01
+        },
+        {
+            id: "spin-051-02",
+            name: "Стілець",
+            level: "level-intro",
+            type: "spin",
+            base: 1,
+            hardness: 0,
+            url: "https://youtube.com/embed/fWT_0RdO0wg",
+            img: img_051_02
+        },
+        {
+            id: "spin-051-03",
+            name: "Жабка",
+            level: "level-intro",
+            type: "spin",
+            base: 1,
+            hardness: 0,
+            url: "https://youtube.com/embed/oYO-dH0JIeM",
+            img: img_051_03
         },
         {
             id: "spin-051-04",
