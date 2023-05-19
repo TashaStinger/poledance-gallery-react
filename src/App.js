@@ -1,5 +1,6 @@
 import './App.css';
-import Gallery from "./Gallery"
+import Gallery from "./Gallery";
+import TrainingProgram from "./TrainingProgram";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
         <h1>Pole Dance Gallery</h1>
       </header>
       <main>
-        <Gallery />
+        {/* <Gallery /> */}
+        <TrainingProgram />
       </main>
       <footer className="App-footer">
         Here will be a footer
