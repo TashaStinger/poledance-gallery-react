@@ -38,7 +38,6 @@ export default function TrainingProgram(){
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
                         {/* <Elements filter="type" filterValue="base" level={level} /> */}
-                        {/* Програма ЗФП */}
                         <PoleProgram />
                     </div>
                     </div>
