@@ -12,7 +12,8 @@ function App() {
         <Program />
       </main>
       <footer className="App-footer">
-        Here will be a footer
+        <i className="instaIcon fa-brands fa-instagram"></i> <a className="instaLink" href="https://www.instagram.com/pole.dance.krakow/" rel="noreferrer" target="_blank">pole.dance.krakow</a>
+        {/* <a className="instaLink" href="https://www.instagram.com/ts_poledancer/">@ts_poledancer</a> */}
       </footer>
       </div>
     </div>
