@@ -18,27 +18,13 @@ export default function PoleProgram () {
         ["hands 14", "legs 14", "stretch 14"],
         ["hands 15", "legs 15", "stretch 15"],
         ["hands 16", "legs 16", "stretch 16"],
-
-
-        // {
-        //     hands : "hands training 1",
-        //     legs : "legs training 1"
-        // },
-        // {
-        //     hands : "hands training 2",
-        //     legs : "legs training 2"
-        // },
-        // {
-        //     hands : "hands training 3",
-        //     legs : "legs training 3"
-        // }
     ];
     let date = new Date();
     let trainingIndex = date.getDate() % program.length;
  
 
     return (
-        <div PoleProgram>
+        <div className="PoleProgram">
             {/* <center> */}
                 {/* Hello from PoleProgram <br /> */}
                 {/* {trainingIndex} */}

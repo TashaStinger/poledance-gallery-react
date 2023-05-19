@@ -26,7 +26,7 @@ export default function TrainingProgram(){
 
     if (loaded){
         return(
-            <div TrainingProgram>
+            <div className="TrainingProgram">
                 {/* ----- accordion ----- */}
                 <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
