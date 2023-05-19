@@ -37,6 +37,24 @@
     box-shadow: 0 0 0 0.25rem rgb(253 113 13 / 25%);
 }
 
-/* .Program .passwordInput {
+.Program .date-string {
     max-width: 300px;
-} */
+    margin:0 auto;
+}
+
+.Program .date-button {
+    color: lightgray;
+    text-decoration: none;
+    padding: 0;
+}
+
+.Program .date-button:active {
+    color: lightgray;
+    text-decoration: none;
+    padding: 0;
+}
+
+.Program .arrow-icon {
+    /* padding-bottom: 20px; */
+    font-size: 14px;
+}

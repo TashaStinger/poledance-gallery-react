@@ -3,12 +3,11 @@ import "./Program.css"
 import PoleProgram from "./PoleProgram.js";
 import FormattedDate from "./FormattedDate";
 
-export default function Program() 
-{
+export default function Program() {
     let [keyword, setKeyword] = useState("");
     let [loaded, setLoaded] = useState(false);
+    let [currentDate, setCurrentDate] = useState(new Date());
     let password = "1234";
-    let date = new Date();
 
     function loadProgram(event)
     {
@@ -26,12 +25,37 @@ export default function Program()
         setKeyword(event.target.value);
     }
 
+    function goBack() {
+        let newDate = new Date();
+        newDate.setDate(currentDate.getDate()-1);
+        // alert(newDate.toString());
+        setCurrentDate(newDate);
+    }
+
+    function goForward() {
+        let newDate = new Date();
+        newDate.setDate(currentDate.getDate()+1);
+        // alert(newDate.toString());
+        setCurrentDate(newDate);
+    }
 
     if (loaded){
         return(
             <div className="Program">
-                <div className="mb-3">
-                     <FormattedDate date={date} />   
+                <div className="row mb-3 date-string">
+                    <div className="col">
+                        <button type="button" className="date-button btn btn-link" onClick={goBack}>
+                            <i className="arrow-icon fa-solid fa-arrow-left-long"></i>
+                        </button>
+                    </div>
+                    <div className="col-8 p-0">
+                        <FormattedDate date={currentDate} />   
+                    </div>
+                    <div className="col">
+                        <button type="button" className="date-button btn btn-link" onClick={goForward}>
+                            <i className="arrow-icon fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
                 </div>
 
                 {/* ----- accordion ----- */}
@@ -45,7 +69,7 @@ export default function Program()
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
                         {/* <Elements filter="type" filterValue="base" level={level} /> */}
-                        <PoleProgram date={date}/>
+                        <PoleProgram date={currentDate}/>
                     </div>
                     </div>
                 </div>
@@ -110,7 +134,7 @@ export default function Program()
                 <form onSubmit={loadProgram}>
                     Type your password:
                     <br />
-                    <input type="password" className="mt-2 mb-2 passwordInput" autoFocus={true} onChange={handleKeywordChange} />
+                    <input type="password" className="mt-2 mb-2" autoFocus={true} onChange={handleKeywordChange} />
                 </form>
             </div>
         )

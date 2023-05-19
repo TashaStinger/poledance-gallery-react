@@ -1,0 +1,7 @@
+.FormattedDate {
+    display: inline;
+    margin: 0;
+    font-size: 15px;
+    color: lightgrey;
+    line-height: 1.7em;
+}
