@@ -1,4 +1,5 @@
 import React from "react";
+import "./PoleProgram.css"
 
 export default function PoleProgram () {
     let program = [
@@ -25,21 +26,15 @@ export default function PoleProgram () {
 
     return (
         <div className="PoleProgram">
-            {/* <center> */}
-                {/* Hello from PoleProgram <br /> */}
-                {/* {trainingIndex} */}
-                <ul>
-                    {program[trainingIndex].map (function (element,index) {
-                                return (
-                                    <li key={index}>
-                                        {element}
-                                    </li>
-                                )
-                    })}
-                </ul>
-
-                
-            {/* </center> */}
+            <ul>
+                {program[trainingIndex].map (function (element,index) {
+                    return (
+                        <li key={index}>
+                            {element}
+                        </li>
+                    )
+                })}
+            </ul>
         </div>
     )
 }

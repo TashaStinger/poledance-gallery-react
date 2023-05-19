@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import "./TrainingProgram.css"
+import "./Program.css"
 import PoleProgram from "./PoleProgram.js";
 
-export default function TrainingProgram(){
+export default function Program(){
     let [keyword, setKeyword] = useState("");
     let [loaded, setLoaded] = useState(false);
     let password = "1234";
 
-    function loadGallery(event)
+    function loadProgram(event)
     {
         // event.preventDefault();
         if (keyword === password) {
@@ -26,13 +26,13 @@ export default function TrainingProgram(){
 
     if (loaded){
         return(
-            <div className="TrainingProgram">
+            <div className="Program">
                 {/* ----- accordion ----- */}
                 <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="headingOne">
                     <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Training Program
+                        Pole Training
                     </button>
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -45,7 +45,7 @@ export default function TrainingProgram(){
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="headingTwo">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Pole dance
+                        Pole Tricks
                     </button>
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -99,8 +99,8 @@ export default function TrainingProgram(){
         )
     } else {
         return(
-            <div className="Gallery">
-                <form onSubmit={loadGallery}>
+            <div className="Program">
+                <form onSubmit={loadProgram}>
                     Type your password:
                     <br />
                     <input type="password" className="mt-2 mb-2" autoFocus={true} onChange={handleKeywordChange} />
