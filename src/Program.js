@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Program.css"
-import PoleProgram from "./PoleProgram.js";
+import PoleProgram from "./PoleProgram";
 import PoleTricks from "./PoleTricks";
+import Stretching from "./Stretching";
 import FormattedDate from "./FormattedDate";
 
 export default function Program() {
@@ -120,7 +121,7 @@ export default function Program() {
                     <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
                         {/* <Elements filter="type" filterValue="spin" level={level} /> */}
-                        Stretching Program
+                        <Stretching date={currentDate} />
                     </div>
                     </div>
                 </div>
