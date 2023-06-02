@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Program.css"
 import PoleProgram from "./PoleProgram.js";
+import PoleTricks from "./PoleTricks";
 import FormattedDate from "./FormattedDate";
 
 export default function Program() {
@@ -26,14 +27,14 @@ export default function Program() {
     }
 
     function goBack() {
-        let newDate = new Date();
-        newDate.setDate(currentDate.getDate()-1);
+        let newDate = new Date(currentDate);
+        newDate.setDate(currentDate.getDate() - 1);
         // alert(newDate.toString());
         setCurrentDate(newDate);
     }
 
     function goForward() {
-        let newDate = new Date();
+        let newDate = new Date(currentDate);
         newDate.setDate(currentDate.getDate()+1);
         // alert(newDate.toString());
         setCurrentDate(newDate);
@@ -68,8 +69,7 @@ export default function Program() {
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                        {/* <Elements filter="type" filterValue="base" level={level} /> */}
-                        <PoleProgram date={currentDate}/>
+                        <PoleProgram date={currentDate} />
                     </div>
                     </div>
                 </div>
@@ -81,8 +81,7 @@ export default function Program() {
                     </h2>
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                        {/* <Elements filter="type" filterValue="knee" level={level} /> */}
-                        План тижня по трюках
+                        <PoleTricks date={currentDate} />
                     </div>
                     </div>
                 </div>
