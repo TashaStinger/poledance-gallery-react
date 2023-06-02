@@ -138,7 +138,7 @@ export default function PoleTricks (props) {
     }
     dayInYear += props.date.getDate();
     let trainingIndex = Math.trunc(dayInYear/7) % program.length;
-    console.log(Math.trunc(dayInYear/7));
+    // console.log(Math.trunc(dayInYear/7));
  
 
     return (
