@@ -4,6 +4,7 @@ import PoleProgram from "./PoleProgram";
 import PoleTricks from "./PoleTricks";
 import Stretching from "./Stretching";
 import Exotic from "./Exotic";
+import Art from "./Art";
 import FormattedDate from "./FormattedDate";
 
 export default function Program() {
@@ -119,7 +120,7 @@ export default function Program() {
                     </h2>
                     <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                        Pole Art Program
+                        <Art date={currentDate} />
                     </div>
                     </div>
                 </div>
