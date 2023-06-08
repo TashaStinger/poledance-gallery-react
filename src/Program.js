@@ -3,6 +3,7 @@ import "./Program.css"
 import PoleProgram from "./PoleProgram";
 import PoleTricks from "./PoleTricks";
 import Stretching from "./Stretching";
+import Exotic from "./Exotic";
 import FormattedDate from "./FormattedDate";
 
 export default function Program() {
@@ -106,8 +107,7 @@ export default function Program() {
                     </h2>
                     <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                        {/* <Elements filter="type" filterValue="handstand" level={level} /> */}
-                        Pole Exotic Program
+                        <Exotic date={currentDate} />
                     </div>
                     </div>
                 </div>
